@@ -1,0 +1,136 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo del encabezado */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 2rem;
+    flex: 1; /* Esto hace que el contenido principal crezca para ocupar el espacio disponible */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Estilo de las imágenes en la página */
+img {
+    max-width: 25%; /* Reduce el ancho de las imágenes a un cuarto del tamaño actual */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+    display: block; /* Asegura que las imágenes no se muestren en línea con el texto */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilo de los formularios */
+form {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #575757;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Esto empuja el footer al fondo cuando el contenido no llena la pantalla */
+}
+
+/* Estilo del calendario */
+#calendar {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
